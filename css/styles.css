@@ -122,18 +122,45 @@ img {
 .under-contact:focus {
     color: var(--accent-color);
 }
+.contact:hover .icon-contact,
+.contact:focus .icon-contact {
+    fill: var(--accent-color);
+}
 
 .contact{
+    display: flex;
+    align-items: center;
+
     color: var(--third-color);
 
     font-style: normal;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.icon-contact {
+    margin-right: 10px;
+
+    fill: var(--third-color);
+}
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+.phone {
+    width: 10px;
+    height: 16px;
+}
 .hero {
-    background-color: var(--backcolor);
+    /*background-image: linear-gradient(to center, rgba(47, 48, 58, 0.658), rgba(47, 48, 58, 0.4));*/
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/banner.jpg);
+    /*background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px 600px;
+
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -201,6 +228,23 @@ img {
     letter-spacing: var(--space-measure);
 
     margin-bottom: 50px;
+}
+.values-img {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    
+    background-color: #F5F4FA;
+    border-radius: 4px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.values-icon {
+    width: 65.32px;
+    height: 70px;
+  
 }
 .values {
     display: flex;
