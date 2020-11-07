@@ -91,7 +91,7 @@ img {
 
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: var(--space-measure);
@@ -278,7 +278,7 @@ img {
 
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: 3%;
+    letter-spacing: var(--space-measure);
     text-transform: uppercase;
 
     margin-bottom: 10px;
