@@ -75,6 +75,9 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;;
+}
 .head-container {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -403,7 +406,7 @@ img {
     height: 47px;
 }
 .logo-6 {
-    width: 88.48px;
+    width: 88.5px;
     height: 45.44px;
 }
 .client-item:hover,
@@ -498,6 +501,7 @@ footer .container {
     background-color: var(--accent-color);
 
     color: var(--first-color);
+    cursor: pointer;
 }
 .button-list {
     display: flex;
@@ -521,6 +525,11 @@ footer .container {
 
     /*background-color: teal;*/
     margin-bottom: 30px;
+}
+.works>li:hover,
+.works>li:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 .photo-descr {
     border: 1px solid #EEEEEE;
