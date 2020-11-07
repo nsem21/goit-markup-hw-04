@@ -12,6 +12,7 @@ html {
     --third-color: #757575;
     --accent-color: #2196F3;
     --backcolor: #2F303A;
+    --svg-pic-color: #AFB1B8;
     
     --space-measure: 0.03em;
 }
@@ -26,7 +27,10 @@ body{
 .values,
 .examples,
 .team,
+.social-net,
+.client-list,
 .impressum,
+.corporate-social-net,
 .button-list,
 .works {
     margin: 0;
@@ -56,6 +60,7 @@ img {
 .values-descr,
 .team-member,
 .team-member-position,
+.join,
 .works-title,
 .works-type {
     padding: 0;
@@ -121,6 +126,7 @@ img {
 .under-contact:hover,
 .under-contact:focus {
     color: var(--accent-color);
+    cursor: pointer;
 }
 .contact:hover .icon-contact,
 .contact:focus .icon-contact {
@@ -230,22 +236,33 @@ img {
     margin-bottom: 50px;
 }
 .values-img {
+    height: 120px;
     display: flex;
     justify-content: center;
-    width: 270px;
-    
+    align-items: center;
+            
     background-color: #F5F4FA;
     border-radius: 4px;
 
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-bottom: 30px;
 
 }
-.values-icon {
-    width: 65.32px;
+.values-icon{
+    width: 70px;
     height: 70px;
-  
 }
+/*.clock {
+    width:  70px;
+    height: 70px;
+}
+.diagram {
+    width: 70px;
+    height: 70px;
+}
+.astronaut{
+    width: 70px;
+    height: 70px;
+}*/
 .values {
     display: flex;
     justify-content: space-between;
@@ -258,7 +275,7 @@ img {
 
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: var(--space-measure);
+    letter-spacing: 3%;
     text-transform: uppercase;
 
     margin-bottom: 10px;
@@ -276,8 +293,10 @@ img {
 .stuff {
     background-color: #F5F4FA;
 }
-.team li {
+.team>li {
     background-color: var(--first-color);
+
+    padding-bottom: 24px;
 
     border-radius: 0px 0px 4px 4px;
     
@@ -308,13 +327,101 @@ img {
     text-align: center;
     letter-spacing: var(--space-measure);
 
-    padding-bottom: 30px;
+    margin-bottom: 16px;
+}
+.social-net {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    /*background-color: red;*/
+}
+.social-link:not(:last-child){
+    margin-right: 10px;
+}
+.social-link-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--svg-pic-color);
+}
+.social-link:focus,
+.social-link:hover{
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+.social-link:focus .social-link-icon,
+.social-link:hover .social-link-icon{
+    fill: var(--first-color);
+}
+.client-list{
+    display: flex;
+}
+.client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+
+    border-radius: 4px;
+    border: 1px solid var(--svg-pic-color);
+}
+.client-item:not(:last-child){
+    margin-right: 30px;
+}
+.client {
+    fill: var(--svg-pic-color);
+}
+.logo-1 {
+    width: 44.27px;
+    height: 49.23px;
+}
+.logo-2 {
+    width: 40px;
+    height: 52px;
+}
+.logo-3 {
+    width: 41px;
+    height: 42.6px;
+}
+.logo-4 {
+    width: 79.66px;
+    height: 40.02px;
+}
+.logo-5 {
+    width: 59px;
+    height: 47px;
+}
+.logo-6 {
+    width: 88.48px;
+    height: 45.44px;
+}
+.client-item:hover,
+.client-item:focus{
+    border: 1px solid var(--accent-color);
+}
+.client-item:hover .client,
+.client-item:focus .client{
+    fill: var(--accent-color);
 }
 footer{
     background-color: var(--backcolor);
 
     padding-top: 60px;
     padding-bottom: 60px;
+}
+footer .container {
+    display: flex;
 }
 .under{
     color: var(--first-color);
@@ -337,8 +444,38 @@ footer{
 
     text-decoration: none;
     letter-spacing: var(--space-measure);
+}
+.social-net-block {
+    width: 206px;
+    
+    margin-left: 69px;
+}
+.corporate-social-net {
+    display: flex;
+    justify-content: flex-start;
+}
+.join {
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
+    color: var(--first-color);
 
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+.corporate-social-net .social-link{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.corporate-social-net .social-link:hover,
+.corporate-social-net .social-link:focus {
+    background-color: var(--accent-color);
+}
+.corporate-social-net .social-link-icon {
+    fill: var(--first-color);
 }
 .button{
     background-color: #F5F4FA;
